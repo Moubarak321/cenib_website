@@ -11,18 +11,22 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
- 
+
 
   <link rel="shortcut icon" href="{% static 'app/images/LOGO/1.png' %}">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-<!-- MDB -->
-<!-- <link
+  <!-- MDB -->
+  <!-- <link
 href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
 rel="stylesheet"
 /> -->
@@ -37,9 +41,10 @@ rel="stylesheet"
   <link href="{% static 'app/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
   <link href="{% static 'app/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  
+
   <!-- Template Main CSS File -->
   <link href="{% static 'app/css/style.css' %}" rel="stylesheet">
 
@@ -49,18 +54,19 @@ rel="stylesheet"
 
 <body>
 
-  
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
       <!-- <h1 class="logo me-auto" ><a href="{% url 'index'  %}" style="color: #0095d4;">CNIB</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo me-auto"><img src="{% static 'app/images/LOGO/1.png' %}" alt="" class="img-fluid" style="background-size: cover; height: 50px;"></a>
+      <a href="index.html" class="logo me-auto"><img src="{% static 'app/images/LOGO/1.png' %}" alt="" class="img-fluid"
+          style="background-size: cover; height: 50px;"></a>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul> 
-          <li><a {% block indexli %}class="active"{% endblock indexli %}  href="{% url 'index'  %}">Accueil</a></li>
+        <ul>
+          <li><a {% block indexli %}class="active" {% endblock indexli %} href="{% url 'index'  %}">Accueil</a></li>
           <li><a href="{% url 'about' %}" {% block aboutli %}{% endblock aboutli %}>A propos</a></li>
           <li><a href="{% url 'courses'  %}" {% block coursesli %}{% endblock coursesli %}>Formations</a></li>
           <li><a href="{% url 'trainers'  %}" {% block trainersli %}{% endblock trainersli %}>Formateurs</a></li>
@@ -78,7 +84,7 @@ rel="stylesheet"
     </div>
   </header><!-- End Header -->
 
-  
+
 
   {% block carouss %}
   <!-- ======= Hero Section ======= -->
@@ -107,12 +113,16 @@ rel="stylesheet"
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3>Mission, Valeurs et objectifs.</h3>
             <p class="fst-italic">
-              Le CNIB apporte une solution efficace et concrète à tous les jeunes qui expriment une passion dans le domaine du numérique.
+              Le CNIB apporte une solution efficace et concrète à tous les jeunes qui expriment une passion dans le
+              domaine du numérique.
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> Favoriser l'insertion professionnelle des jeunes à travers les formations en numérique qui prônent l'emploi, la créativité et l'innovation.</li>
-              <li><i class="bi bi-check-circle"></i> Donner aux jeunes plusieurs opportunités de formation dans le numérique qui est devenu aujourd'hui un véritable levier de développement   .</li>
-              <li><i class="bi bi-check-circle"></i> Permettre aux jeunes formés de devenir auto-didacte et aptes à affronter toutes les demandes et offres du monde digital.</li>
+              <li><i class="bi bi-check-circle"></i> Favoriser l'insertion professionnelle des jeunes à travers les
+                formations en numérique qui prônent l'emploi, la créativité et l'innovation.</li>
+              <li><i class="bi bi-check-circle"></i> Donner aux jeunes plusieurs opportunités de formation dans le
+                numérique qui est devenu aujourd'hui un véritable levier de développement .</li>
+              <li><i class="bi bi-check-circle"></i> Permettre aux jeunes formés de devenir auto-didacte et aptes à
+                affronter toutes les demandes et offres du monde digital.</li>
             </ul>
             <p>
               Au CNIB, l'excellence, l'innovation et la créativité sont nos Valeurs
@@ -131,22 +141,26 @@ rel="stylesheet"
         <div class="row counters">
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="316" data-purecounter-duration="2" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="316" data-purecounter-duration="2"
+              class="purecounter"></span>
             <p>Etudiants</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="05" data-purecounter-duration="2" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="05" data-purecounter-duration="2"
+              class="purecounter"></span>
             <p>Modules de formation</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2"
+              class="purecounter"></span>
             <p>Evènements</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="2" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="2"
+              class="purecounter"></span>
             <p>Formateurs</p>
           </div>
 
@@ -160,13 +174,13 @@ rel="stylesheet"
       <div class="container" data-aos="fade-up">
 
         <div class="row">
-          <div class="col-lg-4 d-flex align-items-stretch" >
+          <div class="col-lg-4 d-flex align-items-stretch">
             <div class="content" style="background-color: #0095d4;">
               <h3 class="text-center">Pourquoi nous choisir</h3>
               <p>
-            <img src="{% static 'app/images/femme22.png' %}" class="img-fluid" alt="">
+                <img src="{% static 'app/images/femme22.png' %}" class="img-fluid" alt="">
 
-               
+
               </p>
               <!-- <div class="text-center">
                 <a href="about.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
@@ -181,7 +195,7 @@ rel="stylesheet"
                     <!-- <i class="bx bx-receipt" style="color: #0095d4;"></i> -->
                     <i class="fa-solid fa-user-graduate"></i>
                     <h4>Excellence</h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                    <!--<p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>-->
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
@@ -189,7 +203,7 @@ rel="stylesheet"
                     <!-- <i class="bx bx-cube-alt" style="color: #0095d4;"></i> -->
                     <i class="fa-sharp fa-solid fa-wand-magic-sparkles"></i>
                     <h4>Innovation</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <!--<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>-->
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
@@ -197,7 +211,7 @@ rel="stylesheet"
                     <!-- <i class="bx bx-images" style="color: #0095d4;"></i> -->
                     <i class="fa-sharp fa-solid fa-users-gear"></i>
                     <h4>Créativité</h4>
-                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    <!--<p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>-->
                   </div>
                 </div>
               </div>
@@ -208,87 +222,7 @@ rel="stylesheet"
       </div>
     </section><!-- End Why Us Section -->
 
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-      <div class="container" data-aos="fade-up">
 
-        <div class="row" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
-              <i class="ri-store-line" style="color: #ffbb2c;"></i>
-              <h3><a href="">Lorem Ipsum</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-              <h3><a href="">Dolor Sitema</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-              <h3><a href="">Sed perspiciatis</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <div class="icon-box">
-              <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-              <h3><a href="">Magni Dolores</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="">Nemo Enim</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-              <h3><a href="">Eiusmod Tempor</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-              <h3><a href="">Midela Teren</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-              <h3><a href="">Pira Neve</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-anchor-line" style="color: #b2904f;"></i>
-              <h3><a href="">Dirada Pack</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-disc-line" style="color: #b20969;"></i>
-              <h3><a href="">Moton Ideal</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-base-station-line" style="color: #ff5828;"></i>
-              <h3><a href="">Verdo Park</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-              <h3><a href="">Flavor Nivelanda</a></h3>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Features Section -->
 
     <!-- ======= Popular Courses Section ======= -->
     <section id="popular-courses" class="courses">
@@ -301,83 +235,38 @@ rel="stylesheet"
 
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="course-item">
-              <img src="{% static 'app/images/course-1.jpg' %}" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Web Development</h4>
-                  <p class="price">$169</p>
-                </div>
+          {% for favorite in favorites %}
 
-                <h3><a href="course-details.html">Website Design</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="{% static 'app/images/trainers/trainer-1.jpg' %}" class="img-fluid" alt="">
-                    <span>Antonio</span>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-2">
+            <a href="{{ favorite.cours.get_absolute_url }}">
+
+              <div class="course-item">
+                <img src="{{ favorite.cours.coursthumbnail.url }}" class="img-fluid" alt="...">
+                <div class="course-content">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3><a href="{{ favorite.cours.get_absolute_url }}">{{ favorite.cours.nom }}</a></h3>
+                    <h4>{{ favorite.cours.price }} FCFA</h4>
+                    <!-- <p class="price" style="margin-right: 0px;">{{ favorite.cours.price }} FCFA</p> -->
                   </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;50
-                    &nbsp;&nbsp;
-                    <i class="bx bx-heart"></i>&nbsp;65
+
+                  <p>{{ favorite.cours.libele }}</p>
+                  <div class="trainer d-flex justify-content-between align-items-center">
+                    <div class="trainer-profile d-flex align-items-center">
+
+                      <img src="{{ favorite.cours.profimage.url }}" class="img-fluid" alt="">
+                      <span>{{ favorite.cours.prof }}</span>
+                    </div>
+                    <div class="trainer-rank d-flex align-items-center">
+                      <i class="bx bx-user"></i>&nbsp;50
+                      &nbsp;&nbsp;
+                      <i class="bx bx-heart"></i>&nbsp;65
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div> <!-- End Course Item-->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="course-item">
-              <img src="{% static 'app/images/course-2.jpg' %}" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Gestion</h4>
-                  <p class="price">$250</p>
-                </div>
-
-                <h3><a href="course-details.html">Gestion Commerciale informatisée</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="{% static 'app/images/trainers/trainer-2.jpg' %}" class="img-fluid" alt="">
-                    <span>Lana</span>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;35
-                    &nbsp;&nbsp;
-                    <i class="bx bx-heart"></i>&nbsp;42
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-            <div class="course-item">
-              <img src="{% static 'app/images/course-3.jpg' %}" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Marketing</h4>
-                  <p class="price">$180</p>
-                </div>
-
-                <h3><a href="course-details.html">Copywriting</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="{% static 'app/images/trainers/trainer-3.jpg' %}" class="img-fluid" alt="">
-                    <span>Brandon</span>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;20
-                    &nbsp;&nbsp;
-                    <i class="bx bx-heart"></i>&nbsp;85
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
+            </a>
+          </div>
+          {% endfor %}
 
         </div>
 
@@ -396,7 +285,8 @@ rel="stylesheet"
                 <h4>Walter White</h4>
                 <span>Web Development</span>
                 <p>
-                  Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+                  Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut
+                  aut aut
                 </p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
@@ -415,7 +305,8 @@ rel="stylesheet"
                 <h4>Sarah Jhinson</h4>
                 <span>Marketing</span>
                 <p>
-                  Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+                  Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum
+                  temporibus
                 </p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
@@ -463,10 +354,10 @@ rel="stylesheet"
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3 style="color: #0095d4;">CNIB</h3>
             <p>
-              Immeuble BENELLI ex APSONIC, <br> 
+              Immeuble BENELLI ex APSONIC, <br>
               2ème étage <br>
               Cotonou Jéricho Bénin<br>
-               <br>
+              <br>
               <strong>Phone:</strong> +1 5589 55488 55<br>
               <strong>Email:</strong> groupecnib@gmail.com<br>
             </p>
@@ -478,24 +369,25 @@ rel="stylesheet"
               <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}" {% ">Accueil</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{% url 'about' %}" {% ">A propos</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{% url 'courses'  %}" ">Cours</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'trainers'  %}"">Formateurs</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'events' %}" {%">Galerie</a></li>
+              <li><i class=" bx bx-chevron-right"></i> <a href="{% url 'trainers'  %}"">Formateurs</a></li>
+              <li><i class=" bx bx-chevron-right"></i> <a href="{% url 'events' %}" {%">Galerie</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{% url 'pricing'  %}" ">Offres</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'contact'  %}" ">Contacts</a></li>
+              <li><i class=" bx bx-chevron-right"></i> <a href="{% url 'contact'  %}" ">Contacts</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Nos formations</h4>
-            <ul>
-              {% for cour in formations %}
-              <li><i class="bx bx-chevron-right"></i> <a href="{{ cour.get_absolute_url }}">{{ cour.nom }}</a></li>
-              {% endfor %}
-              <!-- <li><i class="bx bx-chevron-right"></i> <a href="">Web Development</a></li>
+          <div class=" col-lg-3 col-md-6 footer-links">
+                        <h4>Nos formations</h4>
+                        <ul>
+                          {% for cour in formations %}
+                          <li><i class="bx bx-chevron-right"></i> <a
+                              href="{{ cour.get_absolute_url }}">{{ cour.nom }}</a></li>
+                          {% endfor %}
+                          <!-- <li><i class="bx bx-chevron-right"></i> <a href="">Web Development</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="">Product Management</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="">Marketing</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="">Graphic Design</a></li> -->
-            </ul>
+                        </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
@@ -511,18 +403,19 @@ rel="stylesheet"
     </div>
 
     <div class="container d-md-flex py-4">
-  
-      <div class="me-md-auto text-center text-md-start"> 
+
+      <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; Made by <strong><span><a href="http://wa.me/22990838919">Moubarak BENON  </a></span></strong>. All Rights Reserved
+          &copy; Made by <strong><span><a href="http://wa.me/22990838919">Moubarak BENON </a></span></strong>. All
+          Rights Reserved
         </div>
         <div class="credits">
-          
+
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100086442344655&mibextid=ZbWKwL" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
         <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -531,7 +424,8 @@ rel="stylesheet"
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="{% static 'app/vendor/purecounter/purecounter_vanilla.js' %}"></script>
@@ -547,10 +441,7 @@ rel="stylesheet"
 
 
   <!-- MDB -->
-<script
-type="text/javascript"
-src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
-></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
 
 
 </body>
