@@ -1,11 +1,12 @@
 from django.shortcuts import render, get_object_or_404
-from app.models import Cours
+from app.models import Cours, Favorite
 
 # Create your views here.
 
 def index(request):
     formations = Cours.objects.all()
-    return render(request, 'app/index.html', context={"formations":formations})
+    favorites = Favorite.objects.all()
+    return render(request, 'app/index.html', context={"formations":formations , 'favorites':favorites})
 
 def about(request):
     formations = Cours.objects.all()
@@ -38,4 +39,3 @@ def course_details(request, id):
     # return render (request, 'store/detail.html', context={"product": product} )
     return render(request, 'app/course-details.html', context={"cours": cours, "formations":formations})
 
-    
