@@ -42,3 +42,10 @@ class Cours(models.Model):
 
     def get_absolute_url(self):
         return reverse("course_details", kwargs = {"id": self.id}) # nom de l'url "product" et un paramètre contenant le slug
+
+
+class Favorite(models.Model):
+    cours = models.OneToOneField(Cours, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.cours.nom}"
