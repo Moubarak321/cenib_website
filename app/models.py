@@ -26,7 +26,12 @@ from django.urls import reverse
 les_choix = [
         ('Lana' , 'Lana'),
         ('Antonio' , 'Antonio'),
-        ('Brandon' , 'Brandon')]
+        ('Brandon' , 'Brandon'),
+        ('Prince MENSAH' , 'Prince MENSAH'),
+        ('Daniel ZOUNON' , 'Daniel ZOUNON'),
+        ('Ansbert ABALLOT' , 'Ansbert ABALLOT'),
+        ('Théodore BEHANZIN' , 'Théodore BEHANZIN'),
+        ('Moubarak BENON' , 'Moubarak BENON')]
 
 class Cours(models.Model):
     nom = models.CharField(max_length=100)
@@ -36,6 +41,7 @@ class Cours(models.Model):
     description = models.TextField(max_length=1000)
     prof=models.CharField(choices=les_choix, max_length=50, default="")
     profimage = models.ImageField(upload_to="enseignants", blank=True, null=True)
+    
 
     def __str__(self):
         return f"{self.nom}" 
@@ -49,3 +55,18 @@ class Favorite(models.Model):
 
     def __str__(self):
         return f"{self.cours.nom}"
+
+class Formateur(models.Model):
+    nom =models.CharField(choices=les_choix, max_length=50, default="")
+    cours = models.ManyToManyField(Cours)
+    profimage = models.ImageField(upload_to="enseignants", blank=True, null=True)
+    description = models.TextField(max_length=1000)
+    fontion = models.TextField(max_length=500)
+    onIndex = models.BooleanField(default=False, null=True, blank=True)
+
+    def __str__(self):
+        return f"{self.nom}"
+
+
+
+    

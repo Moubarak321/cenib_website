@@ -61,7 +61,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="" method="post" role="form" class="">
+            <form action="" method="POST" role="form" class="">
               {% csrf_token %}
               <div class="row">
                 <div class="col-md-6 form-group">
@@ -93,5 +93,16 @@
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
+  
+{% for message in messages %}
+{% if message.tags == 'success' %}
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    var m = "{{ message }}" ;
+    swal("Super!", m, "success")
+</script>
+{% endif %}
+{% endfor %}
 
   {% endblock about %}
+

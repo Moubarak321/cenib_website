@@ -1,0 +1,1 @@
+web: gunicorn cnib.wsgi --log-file -
